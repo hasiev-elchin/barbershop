@@ -12,3 +12,9 @@ navToggle.addEventListener('click', function () {
 		navMain.classList.remove('main-nav--opened');
 	}
 });
+window.addEventListener('resize', function(evt){
+	if(window.innerWidth > 767) {
+	navMain.classList.remove('main-nav--opened');
+	navMain.classList.add('main-nav--closed');
+}
+});
